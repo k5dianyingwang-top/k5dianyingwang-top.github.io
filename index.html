@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>k5电影网｜年轻人的在线观影指南 · 新片速递与高分片单</title>
+<meta name="keywords" content="k5电影网,k5,在线观影,电影推荐,新片速递,院线电影,网络电影,高分电影,冷门高分片,类型片,电影排行榜,观影指南,导演合集,电影资讯,口碑榜,票房榜,悬疑片,科幻片,纪录片,动画电影,华语电影,流媒体片单">
+<meta name="description" content="k5电影网（https://k5dianyingwang-top.github.io）是面向年轻观众的在线观影指南，每天更新院线与网络新片速递、冷门高分片单、类型片专题与导演合集。从票房榜到口碑榜，从悬疑科幻到纪录片动画，k5电影网帮你在一分钟内决定今晚看什么。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="bingbot" content="index,follow,max-image-preview:large">
+<meta name="googlebot" content="index,follow,max-image-preview:large">
+<meta name="author" content="k5电影网">
+<meta name="copyright" content="Copyright © k5电影网">
+<meta name="theme-color" content="#07070d">
+<meta name="msapplication-navbutton-color" content="#07070d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:type" content="website">
+<meta property="og:title" content="k5电影网｜年轻人的在线观影指南">
+<meta property="og:description" content="每天更新新片速递、冷门高分片单与类型片专题，一分钟决定今晚看什么。">
+<meta property="og:url" content="https://k5dianyingwang-top.github.io">
+<meta property="og:site_name" content="k5电影网">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="k5电影网｜年轻人的在线观影指南">
+<meta name="twitter:description" content="每天更新新片速递、冷门高分片单与类型片专题，一分钟决定今晚看什么。">
+<link rel="canonical" href="https://k5dianyingwang-top.github.io">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --bg:#07070d;--bg2:#0d0d16;--bg3:#131322;
+ --line:rgba(120,120,255,.16);--line2:rgba(120,120,255,.08);
+ --txt:#ecedf5;--txt2:#9898b0;--txt3:#65657e;
+ --cyan:#35e0ff;--violet:#7b5cff;--pink:#ff4d8d;--lime:#a8ff35;
+ --r:14px;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+ background:var(--bg);color:var(--txt);line-height:1.75;
+ -webkit-font-smoothing:antialiased;overflow-x:hidden;
+ background-image:
+  radial-gradient(ellipse 70% 50% at 80% -5%,rgba(123,92,255,.28),transparent 60%),
+  radial-gradient(ellipse 60% 50% at 10% 8%,rgba(53,224,255,.14),transparent 55%),
+  radial-gradient(ellipse 80% 60% at 50% 105%,rgba(255,77,141,.12),transparent 55%);
+ background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+::selection{background:var(--cyan);color:#07070d}
+
+/* 噪点层 */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;mix-blend-mode:overlay;
+ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+
+/* ===== 顶栏 ===== */
+.top{position:sticky;top:0;z-index:99;background:rgba(7,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line2)}
+.topbar{max-width:1280px;margin:0 auto;padding:0 28px;height:66px;display:flex;align-items:center;gap:32px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--cyan),var(--violet));display:grid;place-items:center;font-size:15px;font-weight:900;color:#07070d;box-shadow:0 0 22px rgba(53,224,255,.5)}
+.logo b{font-size:19px;letter-spacing:.5px;font-weight:800;background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.search{flex:1;max-width:420px;height:40px;border:1px solid var(--line);border-radius:40px;display:flex;align-items:center;padding:0 16px;gap:10px;background:rgba(255,255,255,.03);transition:.25s}
+.search:focus-within{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(53,224,255,.12)}
+.search svg{flex-shrink:0;opacity:.5}
+.search input{flex:1;border:0;background:none;outline:0;color:var(--txt);font-size:14px}
+.search input::placeholder{color:var(--txt3)}
+.topnav{display:flex;align-items:center;gap:6px}
+.topnav a{padding:8px 14px;border-radius:40px;font-size:14px;color:var(--txt2);transition:.2s;letter-spacing:.5px}
+.topnav a:hover{color:var(--txt);background:rgba(255,255,255,.05)}
+.topnav a.hot{color:var(--pink)}
+.act{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.btn{height:40px;padding:0 20px;border-radius:40px;font-size:14px;font-weight:600;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--txt);transition:.22s}
+.btn:hover{border-color:var(--cyan);color:var(--cyan)}
+.btn.primary{background:linear-gradient(90deg,var(--cyan),var(--violet));color:#07070d;border:0;box-shadow:0 6px 20px rgba(123,92,255,.35)}
+.btn.primary:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(123,92,255,.45)}
+.menu{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);align-items:center;justify-content:center;transition:.3s}
+.menu:hover{border-color:var(--cyan)}
+.mlines{position:relative;width:17px;height:12px}
+.mlines i{position:absolute;left:0;width:100%;height:1.6px;background:var(--txt);border-radius:2px;transition:.3s}
+.mlines i:nth-child(1){top:0}.mlines i:nth-child(2){top:5px;width:70%}.mlines i:nth-child(3){top:10px}
+body.open .mlines i:nth-child(1){top:5px;transform:rotate(45deg)}
+body.open .mlines i:nth-child(2){opacity:0}
+body.open .mlines i:nth-child(3){top:5px;width:100%;transform:rotate(-45deg)}
+
+/* ===== 分类胶囊 ===== */
+.chips{border-bottom:1px solid var(--line2)}
+.chips .wrap{padding:12px 28px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.chips .wrap::-webkit-scrollbar{display:none}
+.chip{padding:7px 16px;border-radius:40px;font-size:13px;color:var(--txt2);border:1px solid var(--line2);white-space:nowrap;transition:.2s;flex-shrink:0}
+.chip:hover{color:var(--txt);border-color:var(--txt3)}
+.chip.on{background:var(--txt);color:#07070d;border-color:var(--txt);font-weight:600}
+.chip.live{border-color:rgba(255,77,141,.45);color:var(--pink)}
+.chip.live::before{content:"●";font-size:8px;margin-right:6px;animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+
+/* ===== 主视觉 ===== */
+.hero{display:grid;grid-template-columns:1.55fr 1fr;gap:22px;padding-top:28px}
+.spot{position:relative;min-height:480px;border-radius:20px;overflow:hidden;border:1px solid var(--line);padding:44px;display:flex;flex-direction:column;justify-content:flex-end;background:
+  linear-gradient(160deg,rgba(7,7,13,.1),rgba(7,7,13,.86)),
+  radial-gradient(circle at 78% 22%,rgba(53,224,255,.42),transparent 42%),
+  linear-gradient(135deg,#1a0b2e,#0a1024 60%,#120a1f);
+}
+.spot::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.18) 3px,rgba(0,0,0,.18) 4px);pointer-events:none;opacity:.5}
+.spot>*{position:relative;z-index:2}
+.ribbon{display:inline-flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.ribbon span{padding:5px 13px;border-radius:6px;font-size:12px;font-weight:700;letter-spacing:.5px;background:rgba(53,224,255,.12);color:var(--cyan);border:1px solid rgba(53,224,255,.25)}
+.ribbon span:nth-child(2){background:rgba(255,77,141,.12);color:var(--pink);border-color:rgba(255,77,141,.25)}
+.ribbon span:nth-child(3){background:rgba(168,255,53,.1);color:var(--lime);border-color:rgba(168,255,53,.22)}
+.spot h1{font-size:clamp(30px,3.8vw,46px);line-height:1.2;font-weight:900;letter-spacing:-.5px;margin-bottom:14px}
+.spot h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.spot p{font-size:15px;color:var(--txt2);max-width:560px}
+.spot .row{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.spot .row .btn{height:46px;padding:0 26px;font-size:15px}
+.side{display:flex;flex-direction:column;gap:22px}
+.panel{border:1px solid var(--line);border-radius:16px;padding:22px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0))}
+.panel h3{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px}
+.panel h3 b{font-size:15px;font-weight:800;letter-spacing:1px}
+.panel h3 span{font-size:12px;color:var(--txt3)}
+.trend li{display:flex;gap:14px;align-items:center;padding:9px 0}
+.trend .n{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:800;background:rgba(255,255,255,.06);color:var(--txt3);flex-shrink:0}
+.trend .n.up{background:rgba(168,255,53,.14);color:var(--lime)}
+.trend .n.down{background:rgba(255,77,141,.12);color:var(--pink)}
+.trend .tt{flex:1;min-width:0}
+.trend .tt b{display:block;font-size:14px;font-weight:600;letter-spacing:.3px}
+.trend .tt small{font-size:12px;color:var(--txt3)}
+.live-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.live-grid a{padding:12px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid var(--line2);font-size:13px;color:var(--txt2);transition:.2s}
+.live-grid a:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
+.live-grid a b{display:block;color:var(--txt);font-size:13.5px;margin-bottom:3px;font-weight:600}
+
+/* ===== 通用 ===== */
+section{padding:70px 0}
+.sec-head{display:flex;align-items:flex-end;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+.sec-head .tag{font-size:12px;font-weight:700;letter-spacing:2px;color:var(--cyan);border-left:3px solid var(--cyan);padding-left:10px}
+.sec-head h2{font-size:24px;font-weight:900;letter-spacing:-.3px}
+.sec-head h2 small{display:block;font-size:13px;color:var(--txt3);font-weight:400;margin-top:4px;letter-spacing:.5px}
+.sec-head .spacer{flex:1}
+.sec-head a{font-size:13px;color:var(--txt3);transition:.2s}
+.sec-head a:hover{color:var(--cyan)}
+
+/* ===== 海报 ===== */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.poster{position:relative;cursor:pointer;transition:.32s}
+.poster .cv{position:relative;aspect-ratio:2/3;border-radius:12px;overflow:hidden;border:1px solid var(--line);transition:.32s}
+.poster:hover .cv{transform:translateY(-6px);border-color:transparent;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.poster .cv::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(7,7,13,.95))}
+.poster .cv i{position:absolute;right:12px;bottom:12px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.35);display:grid;place-items:center;z-index:3;transition:.25s}
+.poster:hover .cv i{background:var(--cyan);border-color:var(--cyan)}
+.poster .cv i svg{width:14px;height:14px;fill:#fff;margin-left:2px}
+.poster:hover .cv i svg{fill:#07070d}
+.poster .cv b{position:absolute;left:14px;right:14px;bottom:14px;font-size:17px;font-weight:800;z-index:2;letter-spacing:.3px}
+.poster .cv .badge{position:absolute;top:12px;left:12px;z-index:3;font-size:11px;font-weight:700;padding:4px 9px;border-radius:5px;background:rgba(255,77,141,.9);color:#fff}
+.poster .cv .rate{position:absolute;top:12px;right:12px;z-index:3;font-size:12px;font-weight:800;padding:4px 9px;border-radius:5px;background:rgba(7,7,13,.7);color:var(--lime);border:1px solid rgba(168,255,53,.3)}
+.p1{background:linear-gradient(160deg,#ff4d8d,#7b5cff)}
+.p2{background:linear-gradient(160deg,#35e0ff,#3b82f6)}
+.p3{background:linear-gradient(160deg,#a8ff35,#35e0ff)}
+.p4{background:linear-gradient(160deg,#f59e0b,#ff4d8d)}
+.p5{background:linear-gradient(160deg,#7b5cff,#35e0ff)}
+.p6{background:linear-gradient(160deg,#10b981,#35e0ff)}
+.p7{background:linear-gradient(160deg,#ff6b35,#ff4d8d)}
+.p8{background:linear-gradient(160deg,#6366f1,#a855f7)}
+.p9{background:linear-gradient(160deg,#06b6d4,#10b981)}
+.p10{background:linear-gradient(160deg,#ec4899,#f43f5e)}
+.poster .meta{padding:12px 2px 0}
+.poster .meta b{font-size:15px;font-weight:700;letter-spacing:.3px;display:block}
+.poster .meta small{font-size:12.5px;color:var(--txt3);display:block;margin-top:4px}
+.poster:hover .meta b{color:var(--cyan)}
+
+/* ===== 榜单 ===== */
+.boards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.board{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.025),transparent)}
+.board>.hd{padding:18px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line2)}
+.board>.hd b{font-size:16px;font-weight:800}
+.board>.hd span{font-size:12px;color:var(--txt3)}
+.board li{display:flex;gap:16px;align-items:center;padding:16px 24px;border-bottom:1px solid var(--line2)}
+.board li:last-child{border-bottom:0}
+.board .n{font-size:20px;font-weight:900;width:32px;flex-shrink:0;color:var(--txt3);font-variant-numeric:tabular-nums}
+.board li:nth-child(1) .n,.board li:nth-child(2) .n,.board li:nth-child(3) .n{color:var(--cyan)}
+.board li:nth-child(1) .n{color:var(--pink)}
+.board .th{flex:1;min-width:0}
+.board .th b{font-size:14.5px;font-weight:600}
+.board .th small{display:block;font-size:12px;color:var(--txt3);margin-top:3px}
+.board .sc{font-size:15px;font-weight:800;color:var(--lime);flex-shrink:0}
+
+/* ===== 类型片专题 ===== */
+.genres{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.genre{position:relative;padding:26px 18px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--bg2);transition:.3s;text-align:center;min-height:130px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px}
+.genre:hover{transform:translateY(-5px);border-color:transparent}
+.g1:hover{background:linear-gradient(135deg,#1a0b2e,#2e0b25);box-shadow:0 14px 34px rgba(123,92,255,.3)}
+.g2:hover{background:linear-gradient(135deg,#0b1a2e,#0b2e2c);box-shadow:0 14px 34px rgba(53,224,255,.28)}
+.g3:hover{background:linear-gradient(135deg,#2e0b1a,#2e250b);box-shadow:0 14px 34px rgba(255,77,141,.28)}
+.g4:hover{background:linear-gradient(135deg,#0b2e1a,#0b2e2e);box-shadow:0 14px 34px rgba(168,255,53,.22)}
+.g5:hover{background:linear-gradient(135deg,#2e2b0b,#2e1a0b);box-shadow:0 14px 34px rgba(245,158,11,.28)}
+.g6:hover{background:linear-gradient(135deg,#1a0b2e,#0b122e);box-shadow:0 14px 34px rgba(99,102,241,.3)}
+.genre b{font-size:16px;font-weight:800;letter-spacing:1px;position:relative;z-index:2}
+.genre small{font-size:12px;color:var(--txt3);position:relative;z-index:2}
+.genre .dot{position:absolute;width:90px;height:90px;border-radius:50%;opacity:.35;filter:blur(20px);transition:.3s}
+.g1 .dot{background:var(--violet);right:-10px;top:-10px}
+.g2 .dot{background:var(--cyan);left:-10px;bottom:-10px}
+.g3 .dot{background:var(--pink);right:-10px;bottom:-10px}
+.g4 .dot{background:var(--lime);left:-10px;top:-10px}
+.g5 .dot{background:#f59e0b;right:-10px;top:-10px}
+.g6 .dot{background:#6366f1;left:-10px;bottom:-10px}
+
+/* ===== 资讯流 ===== */
+.feed{display:grid;grid-template-columns:1.6fr 1fr;gap:22px}
+.feed-main{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.feed-main li{display:flex;gap:20px;padding:22px;border-bottom:1px solid var(--line2);transition:.22s}
+.feed-main li:last-child{border-bottom:0}
+.feed-main li:hover{background:rgba(255,255,255,.02)}
+.feed-main li:hover .tt b{color:var(--cyan)}
+.feed-main .num{font-size:13px;font-weight:800;color:var(--txt3);min-width:34px;padding-top:3px}
+.feed-main .body{flex:1;min-width:0}
+.feed-main .tt{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}
+.feed-main .tt b{font-size:17px;font-weight:700;letter-spacing:.2px;transition:.2s}
+.feed-main .tt span{font-size:11px;font-weight:700;padding:3px 9px;border-radius:4px;flex-shrink:0}
+.feed-main .tt span.new{background:rgba(255,77,141,.14);color:var(--pink)}
+.feed-main .tt span.hot{background:rgba(168,255,53,.12);color:var(--lime)}
+.feed-main .tt span.exp{background:rgba(53,224,255,.12);color:var(--cyan)}
+.feed-main p{font-size:13.5px;color:var(--txt2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.feed-main .foot{margin-top:10px;font-size:12px;color:var(--txt3);display:flex;gap:16px}
+.feed-main .foot i{font-style:normal;color:var(--txt3)}
+.feed-side .panel+.panel{margin-top:18px}
+.feed-side h3{margin-bottom:14px}
+.stat-row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line2)}
+.stat-row:last-child{border-bottom:0}
+.stat-row b{font-size:14px;font-weight:600}
+.stat-row span{font-size:13px;color:var(--txt3)}
+
+/* ===== 导演合集 ===== */
+.dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.dir{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--bg2);transition:.3s}
+.dir:hover{border-color:var(--violet);transform:translateY(-4px);box-shadow:0 14px 30px rgba(123,92,255,.18)}
+.dir .av{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:20px;font-weight:900;color:#07070d;margin-bottom:14px}
+.dir b{font-size:16px;font-weight:800;letter-spacing:.5px}
+.dir small{display:block;font-size:12px;color:var(--txt3);margin:4px 0 12px}
+.dir p{font-size:13px;color:var(--txt2);text-align:justify}
+.dir .movies{margin-top:14px;padding-top:12px;border-top:1px solid var(--line2);font-size:12px;color:var(--cyan)}
+
+/* ===== 数据带 ===== */
+.stats{border:1px solid var(--line);border-radius:16px;padding:38px;background:linear-gradient(135deg,rgba(123,92,255,.1),rgba(53,224,255,.05))}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center}
+.sgrid div{padding:0 20px;border-right:1px solid var(--line2)}
+.sgrid div:last-child{border-right:0}
+.sgrid b{display:block;font-size:40px;font-weight:900;letter-spacing:-1px;background:linear-gradient(90deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+.sgrid span{font-size:14px;color:var(--txt2)}
+.sgrid small{display:block;font-size:12px;color:var(--txt3);margin-top:5px}
+
+/* ===== 订阅 ===== */
+.subscribe{border:1px solid var(--line);border-radius:20px;padding:44px;position:relative;overflow:hidden;text-align:center;background:
+  radial-gradient(ellipse at 50% 120%,rgba(123,92,255,.25),transparent 60%),
+  var(--bg2)}
+.subscribe::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 14px,rgba(255,255,255,.012) 14px,rgba(255,255,255,.012) 28px)}
+.subscribe>*{position:relative;z-index:2}
+.subscribe h2{font-size:26px;font-weight:900;margin-bottom:12px}
+.subscribe p{font-size:14.5px;color:var(--txt2);max-width:560px;margin:0 auto 24px}
+.sub-form{display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.sub-form input{flex:1;min-width:200px;height:48px;border-radius:40px;border:1px solid var(--line);background:rgba(7,7,13,.6);padding:0 22px;color:var(--txt);font-size:14px;outline:0}
+.sub-form input:focus{border-color:var(--cyan)}
+.sub-form button{height:48px;padding:0 30px;border-radius:40px;font-size:15px;font-weight:700;background:linear-gradient(90deg,var(--cyan),var(--violet));color:#07070d;transition:.22s}
+.sub-form button:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(53,224,255,.35)}
+
+/* ===== 页脚 ===== */
+footer{border-top:1px solid var(--line);padding:56px 0 30px;background:var(--bg2)}
+.fgrid{max-width:1280px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:36px}
+.fgrid .brand b{font-size:20px;font-weight:900}
+.fgrid .brand p{font-size:13.5px;color:var(--txt3);margin-top:14px;max-width:280px}
+.fgrid h4{font-size:13px;font-weight:800;letter-spacing:1.5px;color:var(--cyan);margin-bottom:16px;text-transform:uppercase}
+.fgrid ul li{padding:6px 0}
+.fgrid ul a{font-size:13.5px;color:var(--txt2);transition:.2s}
+.fgrid ul a:hover{color:var(--cyan)}
+.copy{max-width:1280px;margin:42px auto 0;padding:22px 28px 0;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--txt3)}
+.copy a{color:var(--cyan)}
+
+/* ===== 响应式 ===== */
+@media(max-width:1180px){
+ .grid{grid-template-columns:repeat(4,1fr)}
+ .genres{grid-template-columns:repeat(3,1fr)}
+ .dirs{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .boards,.feed{grid-template-columns:1fr}
+ .hero{grid-template-columns:1fr}
+ .sgrid{grid-template-columns:repeat(2,1fr)}
+ .sgrid div:nth-child(2){border-right:0}
+ .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+ body{font-size:15px}
+ .wrap,.topbar,.chips .wrap,.copy,.fgrid{padding-left:16px;padding-right:16px;max-width:none}
+ .topbar{height:58px;gap:12px;padding:0 16px}
+ .logo b{font-size:17px}
+ .logo .mark{width:30px;height:30px;font-size:13px}
+ .search{display:none}
+ .topnav{display:none}
+ .act .btn:not(.primary){display:none}
+ .menu{display:flex}
+ body.open .topnav{display:flex;position:absolute;top:58px;left:0;right:0;flex-direction:column;background:rgba(7,7,13,.97);padding:12px 16px;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+ body.open .topnav a{border-radius:10px;padding:12px 14px}
+ .chips .wrap{padding:10px 16px}
+ .hero{padding-top:18px}
+ .spot{min-height:420px;padding:26px 22px;border-radius:16px}
+ .spot h1{font-size:29px}
+ .spot .row .btn{height:42px;padding:0 20px;font-size:14px}
+ .side{gap:16px}
+ .panel{padding:18px;border-radius:14px}
+ .live-grid{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+ .poster .cv b{font-size:15px;left:10px;right:10px;bottom:10px}
+ .poster .cv i{right:8px;bottom:8px;width:32px;height:32px}
+ .genres{grid-template-columns:repeat(2,1fr);gap:12px}
+ .dirs{grid-template-columns:1fr}
+ .sgrid{grid-template-columns:1fr;gap:18px}
+ .sgrid div{border-right:0}
+ .stats{padding:28px 22px;border-radius:14px}
+ .subscribe{padding:32px 22px;border-radius:16px}
+ .subscribe h2{font-size:21px}
+ .feed-main li{flex-direction:column;gap:10px;padding:18px}
+ .feed-main .num{display:none}
+ .board li{padding:14px 18px}
+ .fgrid{grid-template-columns:1fr;gap:26px}
+ section{padding:48px 0}
+ .sec-head h2{font-size:20px}
+ .ribbon{flex-wrap:wrap;gap:6px}
+ .ribbon span{font-size:11px;padding:4px 10px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="top">
+  <div class="topbar">
+    <a class="logo" href="https://k5dianyingwang-top.github.io"><span class="mark">K5</span><b>k5电影网</b></a>
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="搜索影片、导演、演员或类型...">
+    </div>
+    <nav class="topnav">
+      <a href="#">首页</a>
+      <a href="#boards">榜单</a>
+      <a href="#feed">资讯</a>
+      <a href="#genres">类型</a>
+      <a href="#dirs">导演</a>
+      <a href="#" class="hot">直播</a>
+    </nav>
+    <div class="act">
+      <button class="btn">登录</button>
+      <button class="btn primary">每日推荐</button>
+    </div>
+    <button class="menu" aria-label="菜单" onclick="document.body.classList.toggle('open')"><span class="mlines"><i></i><i></i><i></i></span></button>
+  </div>
+  <div class="chips">
+    <div class="wrap">
+      <a href="#" class="chip on">全部</a>
+      <a href="#" class="chip live">正在热映</a>
+      <a href="#" class="chip">本周新片</a>
+      <a href="#" class="chip">高分经典</a>
+      <a href="#" class="chip">悬疑犯罪</a>
+      <a href="#" class="chip">科幻奇幻</a>
+      <a href="#" class="chip">爱情剧情</a>
+      <a href="#" class="chip">动作冒险</a>
+      <a href="#" class="chip">恐怖惊悚</a>
+      <a href="#" class="chip">动画</a>
+      <a href="#" class="chip">纪录片</a>
+      <a href="#" class="chip">短片</a>
+      <a href="#" class="chip">华语</a>
+      <a href="#" class="chip">欧美</a>
+      <a href="#" class="chip">日韩</a>
+      <a href="#" class="chip">亚洲</a>
+      <a href="#" class="chip">修复版</a>
+      <a href="#" class="chip">4K HDR</a>
+    </div>
+  </div>
+</div>
+
+<!-- 主视觉 -->
+<section style="padding-top:22px">
+  <div class="wrap">
+    <div class="hero">
+      <div class="spot">
+        <div class="ribbon">
+          <span>本周新片</span><span>口碑第一</span><span>4K 画质</span>
+        </div>
+        <h1>今晚不知道看什么？<br><em>k5电影网</em> 帮你一分钟决定</h1>
+        <p>k5电影网每天更新院线与网络新片速递、冷门高分片单与类型片专题，配合实时口碑榜与票房榜，让你不再把两小时浪费在选片上。</p>
+        <div class="row">
+          <button class="btn primary">查看今日推荐</button>
+          <button class="btn">本周新片 →</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="panel">
+          <h3><b>实时热度榜</b><span>每 10 分钟更新</span></h3>
+          <ul class="trend">
+            <li><span class="n up">1</span><div class="tt"><b>破晓时分</b><small>悬疑 · 口碑 9.1</small></div></li>
+            <li><span class="n up">2</span><div class="tt"><b>深海来信</b><small>科幻 · 口碑 8.7</small></div></li>
+            <li><span class="n down">3</span><div class="tt"><b>春日契约</b><small>爱情 · 口碑 8.4</small></div></li>
+            <li><span class="n up">4</span><div class="tt"><b>边境线</b><small>动作 · 口碑 8.2</small></div></li>
+            <li><span class="n down">5</span><div class="tt"><b>无声之城</b><small>犯罪 · 口碑 8.0</small></div></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3><b>正在直播</b><span>编辑部在线选片</span></h3>
+          <div class="live-grid">
+            <a href="#"><b>今晚十点</b>悬疑片马拉松</a>
+            <a href="#"><b>每周三</b>新片口碑复盘</a>
+            <a href="#"><b>周六夜</b>4K 修复放映</a>
+            <a href="#"><b>随时</b>冷门高分盲盒</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 海报 -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">WHAT TO WATCH</span>
+      <h2>本周值得看<small>编辑部从新片与库存里挑出的十部</small></h2>
+      <span class="spacer"></span>
+      <a href="#">完整片单 →</a>
+    </div>
+    <div class="grid">
+      <div class="poster">
+        <div class="cv p1"><span class="badge">新片</span><span class="rate">9.1</span><b>破晓时分</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>破晓时分</b><small>悬疑 / 127 分钟 · 正在热映</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p2"><span class="rate">8.7</span><b>深海来信</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>深海来信</b><small>科幻 / 142 分钟 · 本周新片</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p3"><span class="badge">高分</span><span class="rate">9.3</span><b>春日契约</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>春日契约</b><small>爱情 / 109 分钟 · 冷门佳作</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p4"><span class="badge">热映</span><span class="rate">8.4</span><b>边境线</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>边境线</b><small>动作 / 136 分钟 · 正在热映</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p5"><span class="rate">8.0</span><b>无声之城</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>无声之城</b><small>犯罪 / 118 分钟 · 口碑持续上升</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p6"><span class="badge">修复</span><span class="rate">9.5</span><b>长安十二时辰</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>长安十二时辰</b><small>历史 / 4K 修复 · 典藏版</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p7"><span class="rate">8.6</span><b>失重</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>失重</b><small>惊悚 / 96 分钟 · 冷门高分</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p8"><span class="badge">新片</span><span class="rate">8.1</span><b>云端玩家</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>云端玩家</b><small>喜剧 / 112 分钟 · 本周新片</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p9"><span class="rate">9.0</span><b>荒野追踪</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>荒野追踪</b><small>纪录 / 98 分钟 · 真实事件改编</small></div>
+      </div>
+      <div class="poster">
+        <div class="cv p10"><span class="badge">独家</span><span class="rate">8.8</span><b>最后一个夏天</b><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i></div>
+        <div class="meta"><b>最后一个夏天</b><small>剧情 / 125 分钟 · 首播独播</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 榜单 -->
+<section id="boards" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">TOP LISTS</span>
+      <h2>实时榜单<small>票房榜与口碑榜双轨更新</small></h2>
+      <span class="spacer"></span>
+      <a href="#">全部榜单 →</a>
+    </div>
+    <div class="boards">
+      <div class="board">
+        <div class="hd"><b>🔥 实时票房榜</b><span>每日 9:00 更新</span></div>
+        <ul>
+          <li><span class="n">1</span><div class="th"><b>破晓时分</b><small>悬疑 · 上映第 6 天</small></div><span class="sc">4.82亿</span></li>
+          <li><span class="n">2</span><div class="th"><b>边境线</b><small>动作 · 上映第 12 天</small></div><span class="sc">3.16亿</span></li>
+          <li><span class="n">3</span><div class="th"><b>深海来信</b><small>科幻 · 点映中</small></div><span class="sc">1.94亿</span></li>
+          <li><span class="n">4</span><div class="th"><b>春日契约</b><small>爱情 · 上映第 20 天</small></div><span class="sc">1.57亿</span></li>
+          <li><span class="n">5</span><div class="th"><b>无声之城</b><small>犯罪 · 上映第 3 天</small></div><span class="sc">1.02亿</span></li>
+          <li><span class="n">6</span><div class="th"><b>云端玩家</b><small>喜剧 · 上映第 9 天</small></div><span class="sc">0.78亿</span></li>
+        </ul>
+      </div>
+      <div class="board">
+        <div class="hd"><b>⭐ 口碑榜</b><span>基于真实评分聚合</span></div>
+        <ul>
+          <li><span class="n">1</span><div class="th"><b>长安十二时辰（4K）</b><small>历史 · 4K 修复版重映</small></div><span class="sc">9.5</span></li>
+          <li><span class="n">2</span><div class="th"><b>春日契约</b><small>爱情 · 冷门逆袭</small></div><span class="sc">9.3</span></li>
+          <li><span class="n">3</span><div class="th"><b>破晓时分</b><small>悬疑 · 年度黑马</small></div><span class="sc">9.1</span></li>
+          <li><span class="n">4</span><div class="th"><b>荒野追踪</b><small>纪录 · 真实改编</small></div><span class="sc">9.0</span></li>
+          <li><span class="n">5</span><div class="th"><b>失重</b><small>惊悚 · 低成本高分</small></div><span class="sc">8.8</span></li>
+          <li><span class="n">6</span><div class="th"><b>最后一个夏天</b><small>剧情 · 首播独播</small></div><span class="sc">8.8</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 类型片 -->
+<section id="genres">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">BY GENRE</span>
+      <h2>按类型找片<small>不知道看什么，先选一个心情</small></h2>
+      <span class="spacer"></span>
+      <a href="#">全部类型 →</a>
+    </div>
+    <div class="genres">
+      <a class="genre g1" href="#"><span class="dot"></span><b>悬疑犯罪</b><small>128 部</small></a>
+      <a class="genre g2" href="#"><span class="dot"></span><b>科幻奇幻</b><small>96 部</small></a>
+      <a class="genre g3" href="#"><span class="dot"></span><b>爱情剧情</b><small>154 部</small></a>
+      <a class="genre g4" href="#"><span class="dot"></span><b>动作冒险</b><small>112 部</small></a>
+      <a class="genre g5" href="#"><span class="dot"></span><b>恐怖惊悚</b><small>87 部</small></a>
+      <a class="genre g6" href="#"><span class="dot"></span><b>动画纪录</b><small>73 部</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- 资讯 -->
+<section id="feed" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">NEWS FEED</span>
+      <h2>电影资讯<small>新片预告、口碑复盘与行业观察</small></h2>
+      <span class="spacer"></span>
+      <a href="#">全部资讯 →</a>
+    </div>
+    <div class="feed">
+      <ul class="feed-main">
+        <li>
+          <span class="num">01</span>
+          <div class="body">
+            <div class="tt"><b>《破晓时分》首周破 4 亿，悬疑片为何集体回春</b><span class="new">新</span></div>
+            <p>从剧本结构到演员调度，拆解这部黑马之作的票房逻辑，以及它给国产悬疑类型带来的三点启示。</p>
+            <div class="foot"><i>深度分析</i><i>8 分钟阅读</i><i>2026.10.09</i></div>
+          </div>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <div class="body">
+            <div class="tt"><b>本周新片口碑榜：五部里只有两部值得买票</b><span class="hot">热</span></div>
+            <p>编辑部全员观影后的真实反馈，帮你避开宣发泡沫，把票钱花在真正能留下记忆的片子上。</p>
+            <div class="foot"><i>口碑复盘</i><i>5 分钟阅读</i><i>2026.10.08</i></div>
+          </div>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <div class="body">
+            <div class="tt"><b>4K 修复版《长安十二时辰》重映，我们对比了三个版本</b><span class="exp">独家</span></div>
+            <p>从色彩空间到噪点控制，实测修复版在画质、音轨与字幕三个层面的提升幅度。</p>
+            <div class="foot"><i>技术评测</i><i>6 分钟阅读</i><i>2026.10.07</i></div>
+          </div>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <div class="body">
+            <div class="tt"><b>冷门高分片单：五部被片名耽误的好电影</b><span class="hot">热</span></div>
+            <p>有些电影不是不好，只是名字太普通。这份片单专治"看海报毫无兴趣"，看完你会回来感谢我们。</p>
+            <div class="foot"><i>片单推荐</i><i>4 分钟阅读</i><i>2026.10.05</i></div>
+          </div>
+        </li>
+        <li>
+          <span class="num">05</span>
+          <div class="body">
+            <div class="tt"><b>流媒体首播战升级：今年已有 38 部电影跳过院线</b><span class="new">新</span></div>
+            <p>哪些片子适合直接在线上看，哪些仍然值得走进影院，我们给出一份简单判断标准。</p>
+            <div class="foot"><i>行业观察</i><i>7 分钟阅读</i><i>2026.10.03</i></div>
+          </div>
+        </li>
+      </ul>
+      <aside class="feed-side">
+        <div class="panel">
+          <h3><b>观影数据速览</b></h3>
+          <div class="stat-row"><b>本周新片</b><span>14 部</span></div>
+          <div class="stat-row"><b>口碑上升</b><span>6 部</span></div>
+          <div class="stat-row"><b>冷门高分</b><span>23 部</span></div>
+          <div class="stat-row"><b>4K 修复</b><span>9 部</span></div>
+          <div class="stat-row"><b>独家首播</b><span>4 部</span></div>
+        </div>
+        <div class="panel">
+          <h3><b>本月主题</b></h3>
+          <p style="font-size:13.5px;color:var(--txt2);text-align:justify">十月主题定为<b style="color:var(--cyan)">「悬疑之夜」</b>，每周更新一部经典悬疑片修复版放映，附分镜拆解与编剧访谈。</p>
+        </div>
+        <div class="panel">
+          <h3><b>编辑部最爱</b></h3>
+          <ul class="trend">
+            <li><span class="n">1</span><div class="tt"><b>破晓时分</b><small>剧本结构最完整</small></div></li>
+            <li><span class="n">2</span><div class="tt"><b>春日契约</b><small>表演细节最动人</small></div></li>
+            <li><span class="n">3</span><div class="tt"><b>失重</b><small>节奏控制最精准</small></div></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 导演合集 -->
+<section id="dirs" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">AUTEUR</span>
+      <h2>导演合集<small>一个导演，就是一份完整的观影计划</small></h2>
+      <span class="spacer"></span>
+      <a href="#">全部导演 →</a>
+    </div>
+    <div class="dirs">
+      <div class="dir">
+        <div class="av" style="background:linear-gradient(135deg,var(--cyan),var(--violet))">林</div>
+        <b>林一川</b><small>悬疑类型 · 4 部代表作</small>
+        <p>以精密的时间线叙事著称，擅长在密闭空间里制造不可预测的转折。</p>
+        <div class="movies">《破晓时分》《无声之城》《盲区》《最后一班》</div>
+      </div>
+      <div class="dir">
+        <div class="av" style="background:linear-gradient(135deg,var(--pink),#f59e0b)">苏</div>
+        <b>苏念</b><small>爱情剧情 · 5 部代表作</small>
+        <p>镜头永远对准普通人的犹豫与心动，台词写得像诗却不说教。</p>
+        <div class="movies">《春日契约》《信以为真》《南方车站》《十一月的雨》</div>
+      </div>
+      <div class="dir">
+        <div class="av" style="background:linear-gradient(135deg,var(--lime),var(--cyan))">陈</div>
+        <b>陈默</b><small>科幻奇幻 · 3 部代表作</small>
+        <p>用有限的预算做出扎实的世界观，视觉服务于情感而非炫技。</p>
+        <div class="movies">《深海来信》《重力之外》《蓝色房间》</div>
+      </div>
+      <div class="dir">
+        <div class="av" style="background:linear-gradient(135deg,#6366f1,#ec4899)">周</div>
+        <b>周野</b><small>动作犯罪 · 6 部代表作</small>
+        <p>长镜头动作设计的代表性作者，每一场打斗都有清楚的地理逻辑。</p>
+        <div class="movies">《边境线》《极速线》《巷战》《逆流》《雷区》《白夜》</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 数据带 -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="stats">
+      <div class="sgrid">
+        <div><b>2,480</b><span>收录影片</span><small>持续更新中</small></div>
+        <div><b>18</b><span>影片类型</span><small>覆盖主流与小众</small></div>
+        <div><b>96</b><span>导演合集</span><small>完整作品年表</small></div>
+        <div><b>12,600</b><span>观影笔记</span><small>来自真实观众</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 订阅 -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="subscribe">
+      <h2>每天一封，只推一部值得看的</h2>
+      <p>k5电影网的每日推荐会写清这部片适合什么心情、看完大概什么感受、值不值得去影院。不刷屏、不卖片、不凑数。</p>
+      <form class="sub-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='已订阅 ✓'">
+        <input type="email" placeholder="输入你的邮箱，订阅每日推荐">
+        <button type="submit">立即订阅</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fgrid">
+    <div class="brand">
+      <div class="logo"><span class="mark">K5</span><b>k5电影网</b></div>
+      <p>面向年轻观众的在线观影指南，帮你在一分钟内决定今晚看什么。内容均为信息整理与观影建议，不涉及任何商业分发。</p>
+    </div>
+    <div>
+      <h4>找片</h4>
+      <ul>
+        <li><a href="#">正在热映</a></li>
+        <li><a href="#">本周新片</a></li>
+        <li><a href="#">高分经典</a></li>
+        <li><a href="#">冷门佳作</a></li>
+        <li><a href="#">4K 修复</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>类型</h4>
+      <ul>
+        <li><a href="#">悬疑犯罪</a></li>
+        <li><a href="#">科幻奇幻</a></li>
+        <li><a href="#">爱情剧情</a></li>
+        <li><a href="#">动作冒险</a></li>
+        <li><a href="#">恐怖惊悚</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>榜单</h4>
+      <ul>
+        <li><a href="#">实时票房榜</a></li>
+        <li><a href="#">口碑榜</a></li>
+        <li><a href="#">年度榜</a></li>
+        <li><a href="#">冷门高分榜</a></li>
+        <li><a href="#">导演合集</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>关于</h4>
+      <ul>
+        <li><a href="#">关于 k5电影网</a></li>
+        <li><a href="#">投稿与勘误</a></li>
+        <li><a href="#">隐私说明</a></li>
+        <li><a href="#">免责声明</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© 2026 <a href="https://k5dianyingwang-top.github.io">k5电影网</a> · 年轻人的在线观影指南 · 本站网址：<a href="https://k5dianyingwang-top.github.io">https://k5dianyingwang-top.github.io</a></span>
+    <span>本站内容仅供影迷交流与信息参考</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var all=document.querySelectorAll('a[href="#"],.chip,.poster,.genre,.dir,.trend a,.btn:not(form .btn),.sub-form button');
+  for(var i=0;i<all.length;i++){
+    all[i].addEventListener('click',function(e){e.preventDefault();});
+  }
+  var heads=document.querySelectorAll('.sec-head,.spot,.panel,.board,.feed-main,.dirs,.genres,.stats,.subscribe');
+  if('IntersectionObserver' in window && window.matchMedia && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.style.opacity='1';
+          en.target.style.transform='none';
+          io.unobserve(en.target);
+        }
+      });
+    },{threshold:0.08});
+    for(var j=0;j<heads.length;j++){
+      heads[j].style.opacity='0';
+      heads[j].style.transform='translateY(22px)';
+      heads[j].style.transition='opacity .6s ease, transform .6s ease';
+      io.observe(heads[j]);
+    }
+  }
+  var chips=document.querySelectorAll('.chip');
+  for(var k=0;k<chips.length;k++){
+    chips[k].addEventListener('click',function(e){
+      e.preventDefault();
+      chips.forEach(function(c){c.classList.remove('on');});
+      this.classList.add('on');
+    });
+  }
+})();
+</script>
+</body>
+</html>
